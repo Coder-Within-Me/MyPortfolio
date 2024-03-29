@@ -19,7 +19,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'  
+          cache: 'npm'
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
       - run: |
           npm ci
       - name: Build
