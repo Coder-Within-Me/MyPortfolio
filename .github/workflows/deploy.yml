@@ -28,6 +28,6 @@ jobs:
         run: |
           npm run build --if-present
       - name: Publish
-        run: npx angular-cli-ghpages --dir=docs --no-silent
+        run: npx angular-cli-ghpages --dir=docs/browser --no-silent
         env:
           GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
