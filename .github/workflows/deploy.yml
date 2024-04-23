@@ -22,6 +22,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: myportfolio/dist/mayur-portfolio/browser
+          folder: dist/mayur-portfolio/browser
           branch: main  
           token: ${{ secrets.GH_TOKEN }}
